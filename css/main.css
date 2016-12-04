@@ -177,7 +177,7 @@ footer {
   height: 100%;
   position: relative;
   overflow: hidden;
-  background: url(../images/video_bg.png) no-repeat; }
+  /*background: url(../images/video_bg.png) no-repeat;*/ }
   .videobox .overlay {
     /*background-color: rgba(0, 0, 0, 0.6);*/
     background: url(../images/dotted.png);
@@ -303,21 +303,22 @@ footer {
       height: 83px;
       display: block;
       text-indent: -9999px; }
-  .videobox .icons {
-    margin: 0;
-    padding: 0;
+  .videobox #parallax {
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: 7%;
+    bottom: 3%;
     text-align: center;
     z-index: 3; }
+  .videobox .icons {
+    margin: 0;
+    padding: 0; }
     .videobox .icons li {
       list-style: none;
       display: inline-block;
       padding: 0 4%;
       width: 130px;
-      visibility: hidden; }
+      /*visibility: hidden;*/ }
       .videobox .icons li figure {
         margin: 0; }
       .videobox .icons li .img-box {
@@ -327,16 +328,16 @@ footer {
         font-size: 12px;
         color: #fff;
         text-transform: uppercase; }
-      .videobox .icons li:nth-child(1) img {
+      .videobox .icons li:nth-child(2) img {
         width: 75px;
         height: 75px; }
-      .videobox .icons li:nth-child(2) img {
+      .videobox .icons li:nth-child(3) img {
         width: 66px;
         height: 66px; }
-      .videobox .icons li:nth-child(3) img {
+      .videobox .icons li:nth-child(4) img {
         width: 141px;
         height: 76px; }
-      .videobox .icons li:nth-child(4) img {
+      .videobox .icons li:nth-child(5) img {
         width: 83px;
         height: 60px; }
   .videobox .next {
