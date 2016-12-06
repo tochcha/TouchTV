@@ -17,7 +17,7 @@ $(document).ready(function () {
 		}
 	});
 	
-	// слайдер
+	// партнеры и каналы
 	$('.carousel').slick({
 		infinite: true,
 		dots: true,
@@ -28,7 +28,30 @@ $(document).ready(function () {
 		speed: 1000,
 		slidesToShow: 4,
 		slidesToScroll:4,
-		autoplay: false
+		autoplay: true,
+		responsive: [
+			{
+			  breakpoint: 992,
+			  settings: {
+				slidesToShow: 3,
+				slidesToScroll:3,
+			  }
+			},
+			{
+			  breakpoint: 768,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll:2,
+			  }
+			},
+			{
+			  breakpoint: 480,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll:1,
+			  }
+			}
+		]
 	});
 	
 	// Скриншоты
@@ -44,17 +67,9 @@ $(document).ready(function () {
 		skinsPath: 'layerslider/skins/',
 		showCircleTimer: false
 	});
+	
+	// 4 иконки над верхним видео
 	jQuery("#parallax").layerSlider({
-		/*responsive: true,
-		responsiveUnder: 1280,
-		layersContainer: 1280,
-		autoStart: false,
-		towWaySlideshow: true,
-		hoverPrevNext: false,
-		navStartStop: false,
-		thumbnailNavigation: 'disabled',
-		skinsPath: 'layerslider/skins/',
-		showCircleTimer: false*/
 	});
 	
 	// высота блока со скриншотами на 100%
@@ -78,16 +93,18 @@ $(document).ready(function () {
 	}
 	
 	// анимация
-	new WOW({
-		boxClass: 'wow',
-	}).init();
+	if( window.innerWidth >= 480 ){
+		new WOW({
+			boxClass: 'wow',
+		}).init();
+	}
 	
 });
 
 // прелоадер
 $(window).load(function () {
-	$(".loader_inner").fadeOut(900);
-	$(".loader").delay(900).fadeOut(900);
-	$(".top_text h1").animated("fadeInDown", "fadeOutUp");
-	$(".top_text p").animated("fadeInUp", "fadeOutDown");
+	$(".loader_inner").fadeOut(400);
+	$(".loader").delay(300).fadeOut(300);
+/*	$(".top_text h1").animated("fadeInDown", "fadeOutUp");
+	$(".top_text p").animated("fadeInUp", "fadeOutDown");*/
 });

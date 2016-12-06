@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Roboto-Black';
   src: url("../fonts/roboto-black-webfont.woff2") format("woff2"), url("../fonts/roboto-black-webfont.woff") format("woff");
@@ -169,7 +170,7 @@ footer {
       background: red; } }
 
 .wrapper {
-  width: 1288px;
+  max-width: 1288px;
   margin: 0 auto; }
 
 .videobox {
@@ -179,15 +180,15 @@ footer {
   overflow: hidden;
   /*background: url(../images/video_bg.png) no-repeat;*/ }
   .videobox .overlay {
-    /*background-color: rgba(0, 0, 0, 0.6);*/
-    background: url(../images/dotted.png);
+    background-color: rgba(0, 0, 0, 0.4);
+    /*background: url(../images/dotted.png);*/
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: .2; }
+    /*opacity: .4;*/ }
   .videobox .wrapper {
     position: relative; }
   .videobox nav {
@@ -265,7 +266,10 @@ footer {
     margin-top: -158px;
     text-align: center;
     width: 100%;
-    z-index: 2; }
+    z-index: 4;
+    max-width: 640px;
+    left: 50%;
+    margin-left: -320px; }
   .videobox h1 {
     font-family: Roboto-Medium;
     font-size: 50px;
@@ -273,8 +277,7 @@ footer {
     font-weight: normal;
     color: #fff;
     letter-spacing: 0;
-    margin: 0 0 14px;
-    visibility: hidden; }
+    margin: 0 0 14px; }
   .videobox h2 {
     font-family: Roboto-Regular;
     font-size: 18px;
@@ -282,7 +285,6 @@ footer {
     line-height: 22px;
     padding-bottom: 58px;
     margin: 0;
-    visibility: hidden;
     font-weight: normal; }
   .videobox .google-button {
     width: 208px;
@@ -291,12 +293,10 @@ footer {
     height: 65px;
     background-color: #fcdd4e;
     border-radius: 6px;
-    -webkit-box-shadow: 0 22px 22px 0 #464646;
-    box-shadow: 0 22px 22px 0 #464646;
-    visibility: hidden; }
+    /*-webkit-box-shadow: 0 22px 22px 0 #464646;
+		box-shadow: 0 22px 22px 0 #464646;*/ }
     .videobox .google-button a {
       background: url(../images/google_buton.png) no-repeat center 11px;
-      background: url(../images/google_buton@2x.png.png) no-repeat center 11px;
       background-size: 100%;
       width: 208px;
       padding: 0 5px;
@@ -307,9 +307,10 @@ footer {
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: 3%;
+    bottom: 0;
     text-align: center;
-    z-index: 3; }
+    z-index: 3;
+    height: 100%; }
   .videobox .icons {
     margin: 0;
     padding: 0; }
@@ -342,7 +343,7 @@ footer {
         height: 60px; }
   .videobox .next {
     position: absolute;
-    z-index: 3;
+    z-index: 997;
     bottom: 32px;
     right: 32px;
     transition: .3s; }
@@ -416,9 +417,72 @@ footer {
       background: url(../images/arrow_icon_white.png) no-repeat;
       display: block; }
 
-#layerslider {
+body #layerslider {
   margin: 0 auto;
-  background-color: #101010; }
+  background-color: #101010;
+  overflow: hidden; }
+  body #layerslider .texts {
+    position: absolute;
+    z-index: 2;
+    width: 800px !important;
+    max-width: 100%; }
+  body #layerslider h2 {
+    font-family: Roboto-Thin;
+    font-size: 55px;
+    color: #fff;
+    z-index: 2px;
+    font-weight: normal;
+    margin: 0 0 22px;
+    position: absolute; }
+  body #layerslider p {
+    opacity: 0.8;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    color: #fff;
+    line-height: 22px;
+    margin: 0 0 20px; }
+  body #layerslider img.base {
+    width: 800px; }
+  body #layerslider .ls-nav-prev {
+    display: none; }
+  body #layerslider .ls-nav-next {
+    top: 118px;
+    padding-left: 38px;
+    font-size: 13px;
+    color: #fff;
+    line-height: 29px;
+    background: url(../images/aroow_rigth.png) no-repeat left;
+    width: 60px;
+    height: 29px;
+    z-index: 4;
+    right: 10px;
+    position: absolute; }
+    body #layerslider .ls-nav-next:after {
+      display: block;
+      content: 'Далее'; }
+  body #layerslider .ls-bottom-nav-wrapper {
+    position: absolute;
+    top: 44%;
+    right: 48px; }
+    body #layerslider .ls-bottom-nav-wrapper a {
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: none;
+      background-color: #606060;
+      border: none;
+      border-radius: 50%;
+      margin: 10px 0;
+      transition: .3s; }
+      body #layerslider .ls-bottom-nav-wrapper a:hover {
+        background-color: #d3d4d7; }
+      body #layerslider .ls-bottom-nav-wrapper a.ls-nav-active {
+        background-color: #fcdd4e;
+        -moz-transform: scale(1.6);
+        -webkit-transform: scale(1.6);
+        -o-transform: scale(1.6);
+        -ms-transform: scale(1.6);
+        transform: scale(1.6); }
 
 .tabs-wrapper .tab {
   opacity: 0;
@@ -441,36 +505,32 @@ footer {
     font-size: 55px;
     font-weight: normal;
     color: #342f39;
-    letter-spacing: 0;
     margin: 0; }
   .opportunities h3 {
     font-family: Roboto-Thin;
-    font-size: 44px;
+    font-size: 38px;
     font-weight: normal;
     color: #342f39;
-    letter-spacing: 0;
-    margin: 0; }
+    margin: 0 0 32px; }
   .opportunities h4 {
-    font-family: Roboto-Thin;
-    font-size: 34px;
-    font-weight: normal;
-    color: #342f39;
-    letter-spacing: 0;
-    margin: 0; }
-  .opportunities h5 {
     font-family: Roboto-Thin;
     font-size: 30px;
     font-weight: normal;
     color: #342f39;
-    letter-spacing: 0;
-    margin: 0; }
+    margin: 0 0 22px; }
+  .opportunities h5 {
+    font-family: Roboto-Thin;
+    font-size: 26px;
+    font-weight: normal;
+    color: #342f39;
+    margin: 0 0 18px; }
   .opportunities h6 {
     font-family: Roboto-Thin;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: normal;
     color: #342f39;
     letter-spacing: 0;
-    margin: 0; }
+    margin: 0 0 12px; }
   .opportunities .tabset {
     padding: 0 3px 38px; }
     .opportunities .tabset a {
@@ -480,7 +540,6 @@ footer {
       text-decoration: underline; }
     .opportunities .tabset a.activetab {
       font-family: Roboto-Light;
-      font-size: 20px;
       color: #a0a0a0;
       text-decoration: none; }
   .opportunities p {
@@ -498,6 +557,48 @@ footer {
       line-height: 29px;
       background: url(../images/arrow_icon.png) no-repeat;
       display: block; }
+  .opportunities ul {
+    margin: 0;
+    padding: 0 0 12px;
+    text-align: center;
+    font-size: 0;
+    letter-spacing: -1px;
+    line-height: 0; }
+    .opportunities ul li {
+      list-style: none;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 18px;
+      vertical-align: top;
+      display: inline-block;
+      width: 33.3%;
+      padding-bottom: 32px; }
+    .opportunities ul figure {
+      margin: 0; }
+    .opportunities ul .table {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+      margin-bottom: 28px; }
+      .opportunities ul .table .table-cell {
+        display: table-cell;
+        vertical-align: middle;
+        height: 156px;
+        width: 100%; }
+        .opportunities ul .table .table-cell img {
+          max-width: 100%;
+          max-height: 100%; }
+    .opportunities ul h4 {
+      font-family: Roboto-Bold;
+      font-size: 16px;
+      color: #2e2e2e;
+      margin: 0 0 22px;
+      text-transform: uppercase; }
+    .opportunities ul figcaption {
+      font-family: Roboto-Medium;
+      font-size: 14px;
+      color: #a0a0a0;
+      padding-bottom: 12px; }
 
 .wrapper-inner {
   padding: 0 66px; }
@@ -532,11 +633,11 @@ footer {
     letter-spacing: 0.81px;
     margin: 0 0 32px; }
   .white-section .carousel-wrapper {
-    padding: 60px 0; }
+    padding: 60px 0 10px; }
     .white-section .carousel-wrapper a {
-      cursor: e-resize; }
+      cursor: all-scroll; }
     .white-section .carousel-wrapper .slick-list {
-      cursor: e-resize; }
+      cursor: all-scroll; }
     .white-section .carousel-wrapper .slick-dots {
       margin: 0;
       padding: 106px 0 0;
@@ -582,7 +683,8 @@ footer {
       vertical-align: middle;
       float: none; }
       .white-section .carousel .item img {
-        display: inline; }
+        display: inline;
+        max-width: 90%; }
         .white-section .carousel .item img.channel-1 {
           width: 200px; }
         .white-section .carousel .item img.channel-2 {
@@ -590,11 +692,16 @@ footer {
         .white-section .carousel .item img.channel-3 {
           width: 235px; }
 
+#section4.white-section .carousel-wrapper .slick-dots {
+  margin-bottom: -60px; }
+
 .view {
-  height: 1082px;
-  background: url(../images/video_info.png) no-repeat center;
-  background-attachment: fixed;
-  background-size: cover;
+  /*height: 1082px;
+	background: url(../images/video_info.jpg) no-repeat center;
+	background-attachment: fixed;
+	background-size: cover;*/
+  padding-top: 60px;
+  background-color: #fff;
   position: relative;
   z-index: -1; }
   .view .next {
@@ -610,6 +717,8 @@ footer {
       line-height: 29px;
       background: url(../images/arrow_icon_white.png) no-repeat;
       display: block; }
+  .view video {
+    width: 100%; }
   .view .view-button {
     width: 95px;
     height: 95px;
@@ -634,6 +743,7 @@ footer {
 footer {
   background: url(../images/colorado.png) repeat-y center; }
   footer .footer-before {
+    background-color: #2e2e2e;
     width: 50%;
     float: right;
     position: relative;
@@ -666,7 +776,6 @@ footer {
     border-radius: 6px;
     -webkit-box-shadow: 0 22px 22px 0 #999;
     box-shadow: 0 22px 22px 0 #1d1d1d;
-    visibility: hidden;
     margin-bottom: 58px; }
     footer .google-button a {
       background: url(../images/google_buton.png) no-repeat center 11px;
@@ -681,7 +790,6 @@ footer {
     position: absolute;
     top: 107px;
     left: 18px;
-    visibility: hidden;
     width: 285px;
     height: 521px;
     background: url(../images/Smartphone.png) no-repeat;
@@ -712,7 +820,8 @@ footer {
 .contacts {
   float: left;
   width: 50%;
-  height: 876px; }
+  height: 876px;
+  background-color: #fcdd4e; }
   .contacts h3 {
     font-family: Roboto-Thin;
     font-size: 55px;
@@ -830,6 +939,11 @@ footer {
   line-height: 25px;
   padding: 50px 15px;
   background-color: #f0f1f5;
+  background: red;
   text-align: center; }
+
+/*.next {
+	visibility: hidden;
+}*/
 
 /*# sourceMappingURL=main.css.map */

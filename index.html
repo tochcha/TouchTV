@@ -24,13 +24,13 @@
 </head>
 
 <body>
-	<!--<div class="loader">
+	<div class="loader">
 		<div class="loader_inner"></div>
-	</div>-->
-	<section id="section1" class="videobox">
+	</div>
+	<div id="section1" class="videobox">
 		<div class="overlay"></div>
 		<div class="fs-background-container">
-			<video id="video_bg" autoplay="autoplay" loop="loop">
+			<video id="video_bg" autoplay="autoplay" loop="loop" poster="images/video_bg.png">
 				<source src="images/145.mp4" type="video/mp4" />
 				<source src="images/145.webm" type="video/webm" />
 				<source src="images/145.ogv" type="video/ogg" />
@@ -38,7 +38,6 @@
 		</div>
 		<nav>
 			<div class="wrapper">
-				<div class="logo"><a href="#section1">TouchTV</a></div>
 				<div id="menu-sticky">
 					<ul>
 						<li><a href="#section2">Возможности</a></li>
@@ -49,12 +48,13 @@
 						<li><a href="#section7">Контакты</a></li>
 					</ul>
 				</div>
+				<div class="logo"><a href="#section1">TouchTV</a></div>
 			</div>
 		</nav>
 		<div class="texts">
 			<h1 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">TouсhTV на твоем Android</h1>
 			<h2 class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">Интерактивное телевидение нового поколения</h2>
-			<div class="google-button wow zoomIn" data-wow-duration="0.6s" data-wow-delay="2.6s"><a href="#">Get it on Google Play</a></div>
+			<div class="google-button wow zoomIn" data-wow-duration="0.6s" data-wow-delay="2s"><a href="#">Get it on Google Play</a></div>
 		</div>
 		<!--<ul id="zzzscene" class="icons scene">
 			<li class="layer" data-depth="1.00">
@@ -82,9 +82,9 @@
 				</figure>
 			</li>
 		</ul>-->
-		<div id="parallax" style="width: 100%; height: 220px;">
+		<div id="parallax" style="width: 100%; height: 100%;">
 			<ul class="icons ls-slide">
-				<li class="ls-l" style="top: 50%; left: 16%;" data-ls="
+				<li class="ls-l" style="top: 84%; left: 16%;" data-ls="
 					easingin: easeOutElastic;
 					easingout: easeInQuart;
 					fadein: false;
@@ -102,7 +102,7 @@
 						<figcaption>Планшеты</figcaption>
 					</figure>
 				</li>
-				<li class="ls-l" style="top: 50%; left: 36%;" data-ls="
+				<li class="ls-l" style="top: 84%; left: 36%;" data-ls="
 					easingin: easeOutElastic;
 					easingout: easeInQuart;
 					fadein: false;
@@ -120,7 +120,7 @@
 						<figcaption>Смартфоны</figcaption>
 					</figure>
 				</li>
-				<li class="ls-l"style="top: 50%; left: 56%;" data-ls="
+				<li class="ls-l" style="top: 84%; left: 56%;" data-ls="
 					easingin: easeOutElastic;
 					easingout: easeInQuart;
 					fadein: false;
@@ -138,7 +138,7 @@
 						<figcaption>ТВ</figcaption>
 					</figure>
 				</li>
-				<li class="ls-l" style="top: 50%; left: 76%;" data-ls="
+				<li class="ls-l" style="top: 84%; left: 76%;" data-ls="
 					easingin: easeOutElastic;
 					easingout: easeInQuart;
 					fadein: false;
@@ -159,7 +159,7 @@
 			</ul>
 		</div>
 		<div class="next wow fadeIn" data-wow-duration="1s" data-wow-delay="2.5s"><a href="#section2">Далее</a></div>
-	</section>
+	</div>
 	<section id="section2" class="opportunities">
 		<div class="next wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"><a href="#section3">Далее</a></div>
 		<div class="wrapper">
@@ -172,6 +172,41 @@
 				<div class="tabs-wrapper">
 					<div id="tab1" class="tab vis">
 						<h3>Для пользователей (h3)</h3>
+						<ul class="opp-list">
+							<li>
+								<figure class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+									<div class="table">
+										<div class="table-cell">
+											<img src="images/oppo-1.png" alt="">
+										</div>
+									</div>
+									<h4>Преимущество 1</h4>
+									<figcaption>Уникальное преимещество <br>приложения <br>номер 1</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+									<div class="table">
+										<div class="table-cell">
+											<img src="images/oppo-2.png" alt="">
+										</div>
+									</div>
+									<h4>Преимущество 2</h4>
+									<figcaption>Уникальное преимещество <br>приложения <br>номер 2</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+									<div class="table">
+										<div class="table-cell">
+											<img src="images/oppo-3.png" alt="">
+										</div>
+									</div>
+									<h4>Преимущество 3</h4>
+									<figcaption>Уникальное преимещество <br>приложения <br>номер 3</figcaption>
+								</figure>
+							</li>
+						</ul>
 						<p>Разнообразный и богатый опыт новая модель организационной деятельности требуют определения и уточнения существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности требуют от нас анализа форм развития. С другой стороны укрепление и развитие структуры представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям.</p>
 						<p><img class="alignleft" src="images/Pro7_2@2x.png.png" alt="">С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа модели развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке систем массового участия. Задача организации, в особенности же сложившаяся структура организации позволяет выполнять важные задания по разработке форм развития. Равным образом консультация с широким активом требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение соответствующий условий активизации.</p>
 						<p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий условий активизации. Таким образом новая модель организационной деятельности представляет собой интересный эксперимент проверки модели развития.</p>
@@ -192,39 +227,271 @@
 		</div>
 	</section>
 	<section id="section3">
-		<div class="next wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"><a href="#section4">Далее</a></div>
+		<!--<div class="next wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"><a href="#section4">Далее</a></div>-->
 		<div id="layerslider" style="width: 100%;">
-			<div class="ls-slide replace-2x" data-ls="slidedelay:3200; transition2d:1,15,104;">
+			<div class="ls-slide" data-ls="slidedelay:3200; transition2d:1;">
 				<img class="ls-bg" src="images/screen-bg-1.jpg" alt="">
 				<img data-ls="
-					easingin: easeOutElastic;
-					easingout: easeInQuart;
+					easingin: easeOutBack;
+					easingout: easeInBack;
 					fadein: false;
-					fadeout: false;
-					offsetyin: -260;
-					offsetyout: -260;
+					fadeout: true;
+					offsetyin: top;
+					offsetyout: bottom;
 					offsetxout:0;
 					offsetxin:0;
-					durationout: 2000;
-					durationin: 4000;
-					" src="images/screen_1.png" class="ls-l" style="top: 56%; left: 50%;" alt="Image layer">
+					durationin: 1000;
+					durationout: 1200;
+					delayin: 0;
+					" src="images/screen_1.png" class="ls-l replace-2x base" style="top: 76%; left: 50%;" alt="Image layer">
+				<h2 style="top:82px; left:66px;" data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: 0;
+					offsetyout: 0;
+					offsetxout: left;
+					offsetxin: left;
+					durationin: 1000;
+					delayin:1000;
+					" class="ls-l">Скриншоты</h2>
+				<div style="top:182px; left:66px;" data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: 0;
+					offsetyout: 0;
+					offsetxout:-1222;
+					offsetxin:-1220;
+					durationin: 1200;
+					delayin: 1500;
+					" class="ls-l texts">
+					<p>Задача организации, в особенности же новая модель организационной деятельности в значительной степени обуславливает создание существенных финансовых и административных условий. Равным образом реализация намеченных плановых заданий способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития.</p>
+					<p>Равным образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+				</div>
 			</div>
-			<div class="ls-slide" data-ls="slidedelay:3200; transition2d:73,103,17;">
+			<div class="ls-slide" data-ls="slidedelay:3200; transition2d:1;">
+				<img class="ls-bg" src="images/screen-bg-2.jpg" alt="">
+				<img data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: top;
+					offsetyout: bottom;
+					offsetxout:0;
+					offsetxin:0;
+					durationin: 1000;
+					durationout: 1200;
+					delayin: 0;
+					" src="images/screen_1.png" class="ls-l replace-2x base" style="top: 76%; left: 50%;" alt="Image layer">
+				<h2 style="top:82px; left:66px;" data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: 0;
+					offsetyout: 0;
+					offsetxout: left;
+					offsetxin: left;
+					durationin: 1000;
+					delayin:1000;
+					" class="ls-l">Скриншоты</h2>
+				<div style="top:182px; left:66px;" data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: 0;
+					offsetyout: 0;
+					offsetxout:-1222;
+					offsetxin:-1220;
+					durationin: 1200;
+					delayin: 1500;
+					" class="ls-l texts">
+					<p>Задача организации, в особенности же новая модель организационной деятельности в значительной степени обуславливает создание существенных финансовых и административных условий. Равным образом реализация намеченных плановых заданий способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития.</p>
+					<p>Равным образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+				</div>
+			</div>
+			<div class="ls-slide" data-ls="slidedelay:3200; transition2d:1;">
+				<img class="ls-bg" src="images/screen-bg-1.jpg" alt="">
+				<img data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: top;
+					offsetyout: bottom;
+					offsetxout:0;
+					offsetxin:0;
+					durationin: 1000;
+					durationout: 1200;
+					delayin: 0;
+					" src="images/screen_1.png" class="ls-l replace-2x base" style="top: 76%; left: 50%;" alt="Image layer">
+				<h2 style="top:82px; left:66px;" data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: 0;
+					offsetyout: 0;
+					offsetxout: left;
+					offsetxin: left;
+					durationin: 1000;
+					delayin:1000;
+					" class="ls-l">Скриншоты</h2>
+				<div style="top:182px; left:66px;" data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: 0;
+					offsetyout: 0;
+					offsetxout:-1222;
+					offsetxin:-1220;
+					durationin: 1200;
+					delayin: 1500;
+					" class="ls-l texts">
+					<p>Задача организации, в особенности же новая модель организационной деятельности в значительной степени обуславливает создание существенных финансовых и административных условий. Равным образом реализация намеченных плановых заданий способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития.</p>
+					<p>Равным образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+				</div>
+			</div>
+			<div class="ls-slide" data-ls="slidedelay:3200; transition2d:1;">
+				<img class="ls-bg" src="images/screen-bg-2.jpg" alt="">
+				<img data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: top;
+					offsetyout: bottom;
+					offsetxout:0;
+					offsetxin:0;
+					durationin: 1000;
+					durationout: 1200;
+					delayin: 0;
+					" src="images/screen_1.png" class="ls-l replace-2x base" style="top: 76%; left: 50%;" alt="Image layer">
+				<h2 style="top:82px; left:66px;" data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: 0;
+					offsetyout: 0;
+					offsetxout: left;
+					offsetxin: left;
+					durationin: 1000;
+					delayin:1000;
+					" class="ls-l">Скриншоты</h2>
+				<div style="top:182px; left:66px;" data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: 0;
+					offsetyout: 0;
+					offsetxout:-1222;
+					offsetxin:-1220;
+					durationin: 1200;
+					delayin: 1500;
+					" class="ls-l texts">
+					<p>Задача организации, в особенности же новая модель организационной деятельности в значительной степени обуславливает создание существенных финансовых и административных условий. Равным образом реализация намеченных плановых заданий способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития.</p>
+					<p>Равным образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+				</div>
+			</div>
+			<div class="ls-slide" data-ls="slidedelay:3200; transition2d:1;">
+				<img class="ls-bg" src="images/screen-bg-1.jpg" alt="">
+				<img data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: top;
+					offsetyout: bottom;
+					offsetxout:0;
+					offsetxin:0;
+					durationin: 1000;
+					durationout: 1200;
+					delayin: 0;
+					" src="images/screen_1.png" class="ls-l replace-2x base" style="top: 76%; left: 50%;" alt="Image layer">
+				<h2 style="top:82px; left:66px;" data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: 0;
+					offsetyout: 0;
+					offsetxout: left;
+					offsetxin: left;
+					durationin: 1000;
+					delayin:1000;
+					" class="ls-l">Скриншоты</h2>
+				<div style="top:182px; left:66px;" data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: 0;
+					offsetyout: 0;
+					offsetxout:-1222;
+					offsetxin:-1220;
+					durationin: 1200;
+					delayin: 1500;
+					" class="ls-l texts">
+					<p>Задача организации, в особенности же новая модель организационной деятельности в значительной степени обуславливает создание существенных финансовых и административных условий. Равным образом реализация намеченных плановых заданий способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития.</p>
+					<p>Равным образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+				</div>
+			</div>
+			<div class="ls-slide" data-ls="slidedelay:3200; transition2d:1;">
 				<img class="ls-bg replace-2x" src="images/screen-bg-2.jpg" alt="">
 				<img data-ls="
-					offsetxin: 0;
-					offsetyin: -260;
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: top;
+					offsetyout: bottom;
 					offsetxout:0;
-					offsetyout: 260;
-					" src="images/screen_1.png" class="ls-l" style="top: 56%; left: 50%;" alt="Image layer">
-				<!--<img data-ls="
-					transformoriginin: 130% 50% 120%;
-					offsetxin: 0;
-					offsetyin: -230;
-					offsetxout: 0;
-					offsetyout: -230;
-					" src="images/step-2-active.png" class="ls-l" style="top: 50%; left: 70%; font-size: 18px;" alt="Image layer">-->
+					offsetxin:0;
+					durationin: 1000;
+					durationout: 1200;
+					delayin: 0;
+					" src="images/screen_1.png" class="ls-l replace-2x base" style="top: 76%; left: 50%;" alt="Image layer">
+				<h2 style="top:82px; left:66px;" data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: 0;
+					offsetyout: 0;
+					offsetxout: left;
+					offsetxin: left;
+					durationin: 1000;
+					delayin:1000;
+					" class="ls-l">Скриншоты</h2>
+				<div style="top:182px; left:66px;" data-ls="
+					easingin: easeOutBack;
+					easingout: easeInBack;
+					fadein: false;
+					fadeout: true;
+					offsetyin: 0;
+					offsetyout: 0;
+					offsetxout:-1222;
+					offsetxin:-1220;
+					durationin: 1200;
+					delayin: 1500;
+					" class="ls-l texts">
+					<p>Задача организации, в особенности же новая модель организационной деятельности в значительной степени обуславливает создание существенных финансовых и административных условий. Равным образом реализация намеченных плановых заданий способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития.</p>
+					<p>Равным образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+				</div>
 			</div>
+			<!--<div class="texts">
+				<h2>Скриншоты</h2>
+				<p>Задача организации, в особенности же новая модель организационной деятельности в значительной степени обуславливает создание существенных финансовых и административных условий. Равным образом реализация намеченных плановых заданий способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития.</p>
+				<p>Равным образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+			</div>-->
 		</div>
 	</section>
 	<section id="section4" class="white-section">
@@ -251,7 +518,28 @@
 	</section>
 	<div id="section5" class="view">
 		<div class="next wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"><a href="#section6">Далее</a></div>
-		<div class="view-button"><a href="#"><i class="fa fa-play" aria-hidden="true"></i></a></div>
+		<!--<div class="view-button"><a href="#"><i class="fa fa-play" aria-hidden="true"></i></a></div>-->
+			<!--<video id="video_bg2" width="100%" poster="images/video_info.jpg">-->
+		<div id="video-container">
+			<!-- Video -->
+			<video id="video" poster="images/video_info.jpg" controls>
+			  <source src="images/245.webm" type="video/webm">
+			  <source src="images/245.ogv" type="video/ogv">
+			  <source src="images/245.mp4" type="video/mp4">
+			  <p>
+				Your browser doesn't support HTML5 video.
+				<a href="videos/mikethefrog.mp4">Download</a> the video instead.
+			  </p>
+			</video>
+			<!-- Video Controls -->
+			<!--<div id="video-controls">
+				<button type="button" id="play-pause" class="play">Play</button>
+				<input type="range" id="seek-bar" value="0">
+				<button type="button" id="mute">Mute</button>
+				<input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+				<button type="button" id="full-screen">Full-Screen</button>
+			</div>-->
+		</div>
 	</div>
 	<section id="section6" class="white-section">
 		<div class="next wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"><a href="#section7">Далее</a></div>
@@ -278,18 +566,18 @@
 	<footer>
 		<div class="wrapper">
 			<div class="footer-before">
-				<h3 class="wow fadeInRight" data-wow-offset="180" data-wow-duration="0.9s" data-wow-delay="0.1s">TouсhTV на твоем Android смартфоне</h3>
-				<p class="wow fadeInRight" data-wow-offset="180" data-wow-duration="0.9s" data-wow-delay="0.3s">Интерактивное телевидение нового поколения</p>
-				<div class="google-button wow fadeInRight" data-wow-offset="180" data-wow-duration="0.9s" data-wow-delay="0.6s"><a href="#">Get it on Google Play</a></div>
-				<ul class="social wow fadeInRight" data-wow-offset="180" data-wow-duration="0.9s" data-wow-delay="0.6s">
+				<div class="smartphone wow bounceInLeft" data-wow-offset="18" data-wow-duration="3.3s" data-wow-delay="0.2s"><img src="images/karla.jpg" alt=""></div>
+				<h3 class="wow fadeInRight" data-wow-offset="18" data-wow-duration="0.9s" data-wow-delay="0.1s">TouсhTV на твоем Android смартфоне</h3>
+				<p class="wow fadeInRight" data-wow-offset="18" data-wow-duration="0.9s" data-wow-delay="0.3s">Интерактивное телевидение нового поколения</p>
+				<div class="google-button wow fadeInRight" data-wow-offset="18" data-wow-duration="0.9s" data-wow-delay="0.6s"><a href="#">Get it on Google Play</a></div>
+				<ul class="social wow fadeInRight" data-wow-offset="18" data-wow-duration="0.9s" data-wow-delay="0.6s">
 					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 				</ul>
-				<div class="smartphone wow bounceInLeft" data-wow-offset="180" data-wow-duration="3.3s" data-wow-delay="0.2s"><img src="images/karla.jpg" alt=""></div>
 			</div>
 			<div id="section7" class="contacts clearfix">
-				<div class="form wow fadeIn" data-wow-offset="280" data-wow-duration="1.3s" data-wow-delay="0.4s">
+				<div class="form wow fadeIn" data-wow-offset="80" data-wow-duration="1.3s" data-wow-delay="0.4s">
 					<h3>Контакты</h3>
 					<div class="fields">
 						<div class="row"><input type="text" placeholder="Имя"></div>
@@ -321,15 +609,8 @@
 	<script src="js/wow.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/active.js"></script>
-	<script src="js/parallax.js"></script>
+	<!--<script src="js/videobuttons.js"></script>-->
 	<script src="js/common.js"></script>
-		<script>
-
-	// Pretty simple huh?
-	var scene = document.getElementById('scene');
-	var parallax = new Parallax(scene);
-
-	</script>
 </body>
 
 </html>

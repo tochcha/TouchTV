@@ -1,17 +1,313 @@
-/* <=1199 */
-/* <=1199 end */
+/* <=1279 */
+@media only screen and (max-width: 1279px) {
+  footer .footer-before {
+    width: 50%; }
+  footer .contacts {
+    width: 50%; }
+    footer .contacts .form {
+      padding-right: 0;
+      margin: 0 auto;
+      width: 80%;
+      float: none; }
+    footer .contacts .select-box {
+      width: 44%; }
+      footer .contacts .select-box select {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 62px; }
+  footer .contacts textarea,
+  footer .contacts input[type="search"],
+  footer .contacts input[type="number"],
+  footer .contacts input[type="password"],
+  footer .contacts input[type="tel"],
+  footer .contacts input[type="email"],
+  footer .contacts input[type="text"] {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 62px; }
+  footer .contacts input[type="email"] {
+    width: 50%; }
+  footer .contacts textarea {
+    height: 192px; } }
+
+/* <=1279 end */
+/* 768-991 start */
+@media only screen and (min-width: 768px) and (max-width: 1163px) {
+  footer .footer-before {
+    width: 42%;
+    padding: 186px 40px 0; }
+    footer .footer-before .smartphone {
+      display: none; }
+  footer .contacts {
+    width: 58%; } }
+
+/* 768-991 end */
 /* <=991 */
+@media only screen and (max-width: 991px) {
+  .wrapper-inner {
+    padding: 0 16px; }
+  .videobox nav ul li {
+    padding: 0 15px; }
+    .videobox nav ul li a {
+      font-size: 12px; } }
+
 /* <=991 end */
 /* <=767 */
+@media only screen and (max-width: 767px) {
+  .videobox {
+    height: 620px; }
+    .videobox nav.fixed,
+    .videobox nav {
+      position: absolute;
+      background: none; }
+      .videobox nav.fixed ul,
+      .videobox nav ul {
+        float: none;
+        text-align: center; }
+        .videobox nav.fixed ul li,
+        .videobox nav ul li {
+          float: none;
+          display: inline-block; }
+      .videobox nav.fixed .logo,
+      .videobox nav .logo {
+        float: none;
+        margin-top: 0;
+        margin-left: 0;
+        transition: 0s; }
+        .videobox nav.fixed .logo a,
+        .videobox nav .logo a {
+          margin: 0 auto;
+          width: 83px;
+          height: 52px; }
+    .videobox .texts {
+      margin-top: -128px; }
+  .fs-background-container {
+    margin-top: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    margin-left: 0;
+    background: url(../images/video_bg_mobile.jpg) no-repeat center;
+    /*-moz-background-size: 100%;
+		-webkit-background-size: 100%;
+		-o-background-size: 100%;
+		background-size: 100% 100%;
+		background-attachment: fixed;*/
+    background-size: auto 620px; }
+  .videobox h1 {
+    font-size: 32px; }
+  .videobox h2 {
+    font-size: 16px; }
+  .videobox .icons li:nth-child(2) img {
+    width: 50px;
+    height: 50px; }
+  .videobox .icons li:nth-child(3) img {
+    width: 50px;
+    height: 50px; }
+  .videobox .icons li:nth-child(4) img {
+    width: 93px;
+    height: auto; }
+  .videobox .icons li:nth-child(5) img {
+    width: 55px;
+    height: auto; }
+  footer .footer-before {
+    width: 100%;
+    padding: 186px 20px 0 330px;
+    float: none;
+    height: 700px; }
+  footer .contacts {
+    width: 100%;
+    float: none; } }
+
 /* <=767 end */
+/* <=650 */
+@media only screen and (max-width: 650px) {
+  .videobox nav.fixed ul,
+  .videobox nav ul {
+    float: none;
+    text-align: center; }
+    .videobox nav.fixed ul li,
+    .videobox nav ul li {
+      float: none;
+      padding: 0 3px; }
+      .videobox nav.fixed ul li a,
+      .videobox nav ul li a {
+        font-size: 11px; }
+  .videobox nav.fixed .logo a,
+  .videobox nav .logo a {
+    width: 66px;
+    height: 42px;
+    background-size: 100% 100%; }
+  .videobox .texts {
+    max-width: 470px;
+    width: 470px;
+    margin-left: -235px; }
+  .white-section h2,
+  .opportunities h2 {
+    font-size: 48px; }
+  .white-section h3,
+  .opportunities h3 {
+    font-size: 32px;
+    margin: 0 0 30px; }
+  .white-section h4,
+  .opportunities h4 {
+    font-size: 28px;
+    margin: 0 0 26px; }
+  .white-section h5,
+  .opportunities h5 {
+    font-size: 23px;
+    margin: 0 0 18px; }
+  .white-section h6,
+  .opportunities h6 {
+    font-size: 29px; }
+  .white-section ul h4,
+  .opportunities ul h4 {
+    text-transform: none; }
+  .white-section p,
+  .opportunities p {
+    text-align: justify; } }
+
+/* <=650 end */
+/* 599 start */
+@media only screen and (max-width: 599px) {
+  footer .footer-before {
+    padding: 60px 40px;
+    height: auto; }
+    footer .footer-before .smartphone {
+      position: static;
+      margin: 0 auto 22px; }
+    footer .footer-before p,
+    footer .footer-before h3 {
+      text-align: center; }
+    footer .footer-before .google-button {
+      margin: 0 auto 58px; }
+    footer .footer-before .social {
+      text-align: center; }
+  footer .contacts .form .select-box,
+  footer .contacts .form input[type="email"] {
+    width: 100%;
+    float: none; }
+  footer .contacts .form input[type="email"] {
+    margin-bottom: 19px; }
+  footer .contacts .form select {
+    padding-left: 23px; } }
+
+/* 599 end */
 /* <=479 */
+@media only screen and (max-width: 479px) {
+  .videobox {
+    /*.next {
+			top:auto !important;
+			bottom: 32px !important;
+		}*/ }
+    .videobox nav.fixed ul,
+    .videobox nav ul {
+      display: none; }
+    .videobox nav.fixed .logo,
+    .videobox nav .logo {
+      margin-top: 62px; }
+    .videobox .texts {
+      width: 300px;
+      margin-left: -150px;
+      margin-top: -150px; }
+      .videobox .texts h1 {
+        line-height: 36px;
+        margin-bottom: 8px; }
+      .videobox .texts h2 {
+        padding: 0 40px;
+        margin-bottom: 44px; }
+  .videobox .icons li figcaption {
+    display: none; }
+  .videobox .icons li:nth-child(2) img {
+    width: 35px;
+    height: auto; }
+  .videobox .icons li:nth-child(3) img {
+    width: 35px;
+    height: auto; }
+  .videobox .icons li:nth-child(4) img {
+    width: 56px; }
+  .videobox .icons li:nth-child(5) img {
+    width: 39px; }
+  .white-section h2,
+  .opportunities h2 {
+    font-size: 40px; }
+  .white-section h3,
+  .opportunities h3 {
+    font-size: 24px;
+    margin: 0 0 30px; }
+  .white-section h4,
+  .opportunities h4 {
+    font-size: 20px;
+    margin: 0 0 26px; }
+  .white-section h5,
+  .opportunities h5 {
+    font-size: 18px;
+    margin: 0 0 18px; }
+  .white-section h6,
+  .opportunities h6 {
+    font-size: 16px; }
+  .white-section ul.opp-list li,
+  .opportunities ul.opp-list li {
+    width: 100%;
+    float: none; }
+  .white-section ul.opp-list h4,
+  .opportunities ul.opp-list h4 {
+    text-transform: uppercase; }
+  .white-section .tabset,
+  .opportunities .tabset {
+    font-size: 14px; }
+    .white-section .tabset a,
+    .opportunities .tabset a {
+      font-size: 14px; }
+  .alignright,
+  .alignleft {
+    float: none;
+    display: block;
+    margin: 0 auto 8px;
+    max-width: 100%; }
+  .next {
+    top: 30px !important; }
+  footer .contacts .form {
+    width: 90%;
+    padding: 100px 0;
+    height: auto; }
+  footer .footer-before {
+    padding: 50px 20px; } }
+
 /* <=479 end */
-/* Custom, iPhone Retina */
-/*==========  Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
+/* <=359 start */
+@media only screen and (max-width: 359px) {
+  footer .footer-before {
+    padding-left: 0;
+    padding-right: 0; } }
+
+/* <=359 end */
+/*==========  height  ==========*/
+@media only screen and (max-height: 479px) {
+  .videobox h1 {
+    font-size: 32px; }
+  .videobox h2 {
+    font-size: 16px; } }
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+  .videobox .google-button a {
+    background: url(../images/google_buton@2x.png.png) no-repeat center 11px;
+    background-size: 100%; }
+  .videobox nav .logo a {
+    background: url(../images/logo_desk@2x.png.png) no-repeat center 0;
+    background-size: 66px 42px; }
+  .view .next a,
+  .videobox .next a {
+    background-image: url(../images/arrow_icon_white@2x.png.png);
+    background-size: 24%; }
+  .white-section .next a,
+  .opportunities .next a {
+    background-image: url(../images/arrow_icon@2x.png.png);
+    background-size: 24%; } }
 
 /*# sourceMappingURL=media.css.map */
