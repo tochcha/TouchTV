@@ -760,6 +760,8 @@ footer {
     letter-spacing: 1px;
     margin: 0 0 12px;
     font-weight: normal; }
+    footer h3:last-child {
+      color: red; }
   footer p {
     font-family: Roboto-Regular;
     font-size: 18px;
@@ -938,12 +940,15 @@ footer {
   letter-spacing: 0;
   line-height: 25px;
   padding: 50px 15px;
-  background-color: #f0f1f5;
-  background: red;
   text-align: center; }
 
 /*.next {
 	visibility: hidden;
 }*/
+.wp-video {
+  width: 100% !important; }
+
+video, embed, iframe, object {
+  max-width: 9999px; }
 
 /*# sourceMappingURL=main.css.map */
